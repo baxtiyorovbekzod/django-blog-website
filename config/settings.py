@@ -30,10 +30,10 @@ DJANGO_ENV = os.getenv('DJANGO_ENV')
 if DJANGO_ENV == 'development':
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = True
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['*']
 elif DJANGO_ENV == 'production':
     DEBUG = False
-    ALLOWED_HOSTS = ['locahost', '127.0.0.1']
+    ALLOWED_HOSTS = ['209.38.96.244']
 else:
     raise Exception('DJANGO_ENV is not isntalled.')
 
