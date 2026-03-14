@@ -33,7 +33,7 @@ if DJANGO_ENV == 'development':
     ALLOWED_HOSTS = ['*']
 elif DJANGO_ENV == 'production':
     DEBUG = False
-    ALLOWED_HOSTS = ['209.38.96.244']
+    ALLOWED_HOSTS = ['*']
 else:
     raise Exception('DJANGO_ENV is not isntalled.')
 
