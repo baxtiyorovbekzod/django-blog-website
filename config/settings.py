@@ -140,7 +140,7 @@ if DJANGO_ENV == 'development':
         BASE_DIR / 'static'
     ]
 elif DJANGO_ENV == 'production':
-    STATIC_ROOT =Path("/home/django/django-blog-website/static")
+    STATIC_ROOT =Path("/var/www/blog/static/")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
